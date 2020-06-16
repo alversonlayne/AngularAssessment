@@ -1,0 +1,24 @@
+
+<h2>{{ title }}</h2>
+
+  <div class="col-4 themed-grid-col">
+    <table id="employees" style="width:100%">
+      <tr>
+          <th>Name</th>
+          <th>Title</th>
+      </tr>
+
+      <tr *ngFor="let employee of employees">
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.title }}</td>
+      </tr>
+
+    </table>
+  </div>
+
+<!-- <ul>
+  <li *ngFor="let employee of employees">
+    <h2>{{employee.name}}</h2>
+    <p>{{employee.title}}</p>
+  </li>
+</ul> -->
